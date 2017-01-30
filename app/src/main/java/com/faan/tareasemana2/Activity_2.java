@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Activity_2 extends AppCompatActivity {
-
+    private TextView tn, tt,te,td, tf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,7 @@ public class Activity_2 extends AppCompatActivity {
         String descripcion = parametros.getString("pDescripcion");
         String fecha = parametros.getString("pFecha");
 
-        TextView tn, tt,te,td, tf;
+
 
         tn= (TextView) findViewById(R.id.txtNombre);
         tt= (TextView) findViewById(R.id.txtTelefobo);
@@ -37,10 +37,10 @@ public class Activity_2 extends AppCompatActivity {
     public void volverActivity1(View v)
     {
         Intent i = new Intent(this, contactoActivity.class);
-        //i.putExtra("pNombre",Enombre.getText().toString());
-       // i.putExtra("pTelefono",Etelefono.getText().toString());
-        //i.putExtra("pEmail",Eemail.getText().toString());
-       // i.putExtra("pDescripcion",Edescripcion.getText().toString());
+        i.putExtra("pNombre",tn.getText().toString());
+        i.putExtra("pTelefono",tt.getText().toString());
+        i.putExtra("pEmail",te.getText().toString());
+        i.putExtra("pDescripcion",td.getText().toString());
        // i.putExtra("pFecha",dP.toString());
         startActivity(i);
     }

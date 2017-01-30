@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class contactoActivity extends AppCompatActivity {
 
@@ -20,6 +21,22 @@ public class contactoActivity extends AppCompatActivity {
         Eemail =(EditText) findViewById(R.id.editEmail);
         Edescripcion =(EditText) findViewById(R.id.editDescripcion);
         dP =(DatePicker) findViewById(R.id.fechaPicker);
+
+        if( getIntent() != null &&  getIntent().getExtras() !=null ) {
+            Bundle parametros  = getIntent().getExtras();
+            String nombre = parametros.getString("pNombre");
+            String telefono = parametros.getString("pTelefono");
+            String email = parametros.getString("pEmail");
+            String descripcion = parametros.getString("pDescripcion");
+          //  String fecha = parametros.getString("pFecha");
+            Enombre.setText(nombre);
+            Etelefono.setText(telefono);
+            Eemail.setText(email);
+            Edescripcion.setText(descripcion);
+
+
+        }
+
     }
 
     public void cargarActividad2(View v)
