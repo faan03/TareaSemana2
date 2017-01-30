@@ -12,12 +12,16 @@
     android:orientation="vertical">
     <TextView
         android:text="Confirmar Datos"
-        android:layout_width= "202dp"
+        android:layout_width= "match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
         android:id="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textSize="20"
+        />
 
 <LinearLayout android:orientation="horizontal"
 android:layout_height="wrap_content"
