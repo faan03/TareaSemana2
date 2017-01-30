@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TareaSemana2</string>
+    <string name="nombre">Nombre completo</string>
+    <string name="telefono">Telefono</string>
+    <string name="email">Email</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="siguiente"> Siguiente</string>
+
+
 </resources>
