@@ -28,7 +28,7 @@ public class contactoActivity extends AppCompatActivity {
             String telefono = parametros.getString("pTelefono");
             String email = parametros.getString("pEmail");
             String descripcion = parametros.getString("pDescripcion");
-            dP.updateDate(  2017, 12, 31 ); // year, month, day);
+            dP.updateDate(  parametros.getInt("pAnio"), parametros.getInt("pMes"), parametros.getInt("pDia") ); // year, month, day);
             Enombre.setText(nombre);
             Etelefono.setText(telefono);
             Eemail.setText(email);
@@ -47,7 +47,7 @@ public class contactoActivity extends AppCompatActivity {
         i.putExtra("pEmail",Eemail.getText().toString());
         i.putExtra("pDescripcion",Edescripcion.getText().toString());
         i.putExtra("pAnio",dP.getYear());
-        i.putExtra("pMes", dP.getMonth() );
+        i.putExtra("pMes", dP.getMonth()+1 );
         i.putExtra("pdia",dP.getDayOfMonth());
         startActivity(i);
     }
