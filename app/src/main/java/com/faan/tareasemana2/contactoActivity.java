@@ -46,7 +46,9 @@ public class contactoActivity extends AppCompatActivity {
         i.putExtra("pTelefono",Etelefono.getText().toString());
         i.putExtra("pEmail",Eemail.getText().toString());
         i.putExtra("pDescripcion",Edescripcion.getText().toString());
-        i.putExtra("pFecha",dP.getDayOfMonth()+" / " + dP.getMonth() + " / " + dP.getYear());
+        i.putExtra("pAnio",dP.getYear());
+        i.putExtra("pMes", dP.getMonth() );
+        i.putExtra("pdia",dP.getDayOfMonth());
         startActivity(i);
     }
 }

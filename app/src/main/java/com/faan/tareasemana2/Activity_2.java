@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class Activity_2 extends AppCompatActivity {
     private TextView tn, tt,te,td, tf;
+    int a,m,d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +18,10 @@ public class Activity_2 extends AppCompatActivity {
         String telefono = parametros.getString("pTelefono");
         String email = parametros.getString("pEmail");
         String descripcion = parametros.getString("pDescripcion");
-        String fecha = parametros.getString("pFecha");
-
+        a=  parametros.getInt("pAnio");
+        m= parametros.getInt("pMes");
+        d= parametros.getInt("pDia");
+        String fecha = a + "/" + m + "/" +d;
 
 
         tn= (TextView) findViewById(R.id.txtNombre);
