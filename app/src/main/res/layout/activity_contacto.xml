@@ -11,41 +11,70 @@
     android:orientation="vertical"
     tools:context="com.faan.tareasemana2.contactoActivity">
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="@string/nombre"
-        android:ems="10"
-        android:id="@+id/editNombre" />
+        android:id="@+id/tilNombreCompleto">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/nombre"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <DatePicker
         android:layout_width="match_parent"
-        android:layout_height="142dp"
+        android:layout_height="50dp"
         android:id="@+id/fechaPicker"
         />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilTel">
 
-    <EditText
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/telefono"
-        android:ems="10"
-        android:id="@+id/editTelefono" />
-    <EditText
+        android:hint="@string/telefono"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="@string/email"
-        android:ems="10"
-        android:id="@+id/editEmail" />
-    <EditText
+        android:id="@+id/tilemail">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/email"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="@string/descripcion"
-        android:ems="10"
-        android:id="@+id/editDescripcion" />
+        android:id="@+id/tildescripcion">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/descripcion"
+            />
+    </android.support.design.widget.TextInputLayout>
+    
 
     <Button
         android:layout_width="match_parent"
