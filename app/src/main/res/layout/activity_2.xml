@@ -10,7 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.faan.tareasemana2.Activity_2"
     android:orientation="vertical">
-
     <TextView
         android:text="Confirmar Datos"
         android:layout_width= "202dp"
@@ -20,38 +19,89 @@
         android:id="@+id/textView"
         android:layout_centerHorizontal="true" />
 
+<LinearLayout android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content">
     <TextView
-        android:text="nombre "
+        android:text="Nombre: "
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        />
+    <TextView
+        android:text=" n"
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtNombre"
         />
+</LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:text="Fecha Nacimiento "
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtF"
+            />
     <TextView
-        android:text="Fecha Nacimiento "
+        android:text="F"
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtFecha"
         />
-    <TextView
-        android:text="Telefono "
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:text="Telefono "
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtT"
+            />
+        <TextView
+        android:text="T"
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtTelefobo"
         />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
     <TextView
         android:text="Email "
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtE"
         />
 
+        <TextView
+            android:text="E "
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
     <TextView
         android:text="Descripcion "
         android:layout_width= "match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtD"
         />
 
+        <TextView
+            android:text="D"
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescripcion"
+            />
+    </LinearLayout>
     <Button
         android:text="Editar Datos"
         android:layout_width="match_parent"

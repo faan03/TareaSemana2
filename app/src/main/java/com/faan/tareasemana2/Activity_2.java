@@ -27,11 +27,11 @@ public class Activity_2 extends AppCompatActivity {
         td= (TextView) findViewById(R.id.txtDescripcion);
         tf= (TextView) findViewById(R.id.txtFecha);
 
-        tn.setText("Nombre :" + nombre);
-        tt.setText("Tel :" + telefono);
-        te.setText("Email :" + email);
-        td.setText("Descripción :" + descripcion);
-        tf.setText("Fecha Nacimiento :" + fecha);
+        tn.setText(nombre);
+        tt.setText(telefono);
+        te.setText(email);
+        td.setText(descripcion);
+        tf.setText(fecha);
     }
 
     public void volverActivity1(View v)

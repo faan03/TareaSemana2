@@ -74,7 +74,6 @@
             android:hint="@string/descripcion"
             />
     </android.support.design.widget.TextInputLayout>
-    
 
     <Button
         android:layout_width="match_parent"
